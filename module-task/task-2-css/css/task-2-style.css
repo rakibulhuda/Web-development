@@ -1,0 +1,24 @@
+*{
+    font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
+}
+body{
+    margin: 0px 150px;
+    background-image: url('https://imgs.search.brave.com/nuHEGu3gMFQos8PDg1pBOfE2xljT5Y-I9FxzJ6P611o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvNjk4/NTI2MC9wZXhlbHMt/cGhvdG8tNjk4NTI2/MC5qcGVnP2NzPXRp/bnlzcmdiJmRwcj0x/Jnc9NTAw');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#external-p{
+    background-color: navajowhite;
+}
+.embedded{
+    background-color: antiquewhite;
+}
+.game{
+    background-image: url("https://imgs.search.brave.com/GTcn00N6I09AHNF8ovL1eINsdp_rECAX4AFKuK04Rbs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZnN0b3BwZXJzLmNv/bS9zdHlsZXMvd2lk/ZS9zMy9tZWRpYS8y/MDE4LzA2LzIwL25p/a2Vfd29ybGRfY3Vw/XzIwMThfcGhvdG9z/aG9vdF9lbmdsYW5k/X2ZyYW5jZV9icmF6/aWxfcGhvdG9zX3Rh/a2VuX2J5X25pY2tf/cGVjb3JpX3Bob3Rv/Z3JhcGhlcl90YW1w/YV9vcmxhbmRvXy5q/cGcud2VicD9pdG9r/PWIybEFwVU5q");
+    /*background-size: cover;*/
+    background-color: hotpink;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 700px;
+    width: 1000px;
+}

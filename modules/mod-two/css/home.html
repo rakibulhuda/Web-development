@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        *{
+            /*margin: 0;*/
+        }
+        li{
+            color: goldenrod;
+        }
+        ul{
+            background: whitesmoke;
+            width: 50%;
+        }
+        .bolding{
+            font-weight: bolder;
+        }
+        #lamb{
+            font-size: x-large;
+        }
+        #custom1{
+            color: deepskyblue;
+        }
+        #custom2{
+            color: orange;
+        }
+        .hightlight{
+            text-align: right;
+            font-style: italic;
+        }
+        #custom1, #custom2, .hightlight{
+            background-color: dimgrey;
+        }
+        .fencing{
+            /*border: 10px solid darkred;*/
+            background-color: blanchedalmond;
+            text-align: center;
+            border-radius: 10px;
+            border-top: 10px solid green;
+            border-bottom: 10px solid green;
+            border-left: 10px solid darkred;
+            border-right: 10px solid darkred;
+            /*margin: 20px; !*margin all over*!*/
+            /*margin: 10px 50px; !*TopBottom LeftRight*!*/
+            /*margin : 10px 200px 50px; !*Top RightLeft Bottom *!*/
+            margin : 30px 10px 50px 300px; /*Top Right Bottom Left*/
+            padding: 50px; /*margin all over*/
+            /*padding: 10px 50px; !*TopBottom LeftRight*!*/
+            /*padding : 10px 200px 50px; !*Top RightLeft Bottom *!*/
+            /*padding : 30px 300px 50px 10px; !*Top Right Bottom Left*!*/
+        }
+        .box1{
+            background-color: mediumpurple;
+            height: 250px;
+            width: 500px;
+            padding: 50px;
+            border: 10px solid darkred;
+        }
+        .box2{
+            background-color: coral;
+            height: 250px;
+            width: 500px;
+            padding: 50px;
+            margin:10px;
+            border: 10px solid darkslategray;
+            box-sizing: border-box;
+        }
+        /*Element Selector*/
+        a{
+            text-decoration: none;
+        }
+        a[href^="https://"]:hover{
+            color: green;
+        }
+        a[href^="http://"]:hover{
+            color:red;
+        }
+        a[href$=".pdf"]:hover{
+            font-weight: bold;
+        }
+        a[href$=".org"]:hover{
+            color: purple;
+        }
+        a[target="_blank"]{
+            font-style: italic;
+            text-decoration: underline;
+        }
+        input[type="submit"]:hover{
+            color: red;
+        }
+        input[type="text"], input[type="password"]{
+            color:green;
+        }
+        /*Child Selector*/
+        div > p{
+            background-color: green;
+            color: gold;
+        }
+        /*Descendent Selector*/
+        div p {
+            background-color: green;
+            color: gold;
+        }
+    </style>
+    <title>CSS</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body id="custom-body">
+    <!--Selector-->
+    <div>
+        <h2>SELECTOR</h2>
+        <p style="color: red; background-color: black">
+            The first option the tool allows you to adjust is the number of random words to be generated. You can choose as many or
+            as few as you'd like. You also have the option of choosing words that only begin with a certain letter, only end with a
+            certain letter or only begin and end with certain letters. If you leave these blank, the randomized words that appear
+            will be from the complete list.
+        </p>
+        <p style="color: gold; background-color: dimgray">
+            The first option the tool allows you to adjust is the number of random words to be generated. You can choose as many or
+            as few as you'd like. You also have the option of choosing words that only begin with a certain letter, only end with a
+            certain letter or only begin and end with certain letters. If you leave these blank, the randomized words that appear
+            will be from the complete list.
+        </p>
+        <ul>
+            <li>Chicken</li>
+            <li class="bolding">Beef</li>
+            <li id="lamb">Lamb</li>
+            <li class="bolding">Egg</li>
+        </ul>
+        <p id="custom1">
+            custom 1 The first option the tool allows you to adjust is the number of random words to be generated. You can choose as many or
+            as few as you'd like. You also have the option of choosing words that only begin with a certain letter, only end with a
+            certain letter or only begin and end with certain letters. If you leave these blank, the randomized words that appear
+            will be from the complete list.
+        </p>
+        <p id="custom2" class="p2">
+            custom 2 The first option the tool allows you to adjust is the number of random words to be generated. You can choose as many or
+            as few as you'd like. You also have the option of choosing words that only begin with a certain letter, only end with a
+            certain letter or only begin and end with certain letters. If you leave these blank, the randomized words that appear
+            will be from the complete list.
+        </p>
+        <p class="hightlight">
+            custom 3 The first option the tool allows you to adjust is the number of random words to be generated. You can choose as many or
+            as few as you'd like. <span class="custom-hightlight">You also have the option</span> of choosing words that only begin with a certain letter, only end with a
+            certain letter or only begin and end with certain letters. If you leave these blank, the randomized words that appear
+            will be from the complete list.
+        </p>
+    </div>
+    <br><br>
+    <div>
+    <!--border-->
+        <h2>BORDER</h2>
+        <div class="fencing">
+            <span style="font-weight: bolder">House 1</span><br>
+            <p>The first option the tool allows you to adjust is the number of random words to be generated. You can choose as many or
+            as few as you'd like. You also have the option of choosing words that only begin with a certain letter, only end with a
+            certain letter or only begin and end with certain letters. If you leave these blank, the randomized words that appear
+            will be from the complete list. The first option the tool allows you to adjust is the number of random words to be generated. You can choose as many or
+            as few as you'd like. You also have the option of choosing words that only begin with a certain letter, only end with a
+            certain letter or only begin and end with certain letters. If you leave these blank, the randomized words that appear
+        will be from the complete list.</p>
+        </div>
+        <div class="fencing">
+            <span style="font-weight: bolder">House 2</span><br>
+            <p>The first option the tool allows you to adjust is the number of random words to be generated. You can choose as many or
+                as few as you'd like. You also have the option of choosing words that only begin with a certain letter, only end with a
+                certain letter or only begin and end with certain letters. If you leave these blank, the randomized words that appear
+                will be from the complete list. The first option the tool allows you to adjust is the number of random words to be generated. You can choose as many or
+                as few as you'd like. You also have the option of choosing words that only begin with a certain letter, only end with a
+                certain letter or only begin and end with certain letters. If you leave these blank, the randomized words that appear
+                will be from the complete list.</p>
+        </div>
+        <div class="fencing">
+            <span style="font-weight: bolder">House 1</span><br>
+            <p>The first option the tool allows you to adjust is the number of random words to be generated. You can choose as many or
+                as few as you'd like. You also have the option of choosing words that only begin with a certain letter, only end with a
+                certain letter or only begin and end with certain letters. If you leave these blank, the randomized words that appear
+                will be from the complete list. The first option the tool allows you to adjust is the number of random words to be generated. You can choose as many or
+                as few as you'd like. You also have the option of choosing words that only begin with a certain letter, only end with a
+                certain letter or only begin and end with certain letters. If you leave these blank, the randomized words that appear
+                will be from the complete list.</p>
+        </div>
+    </div>
+    <br><br>
+    <!--BOX SIZING-->
+    <div>
+        <h2>BOX SIZING</h2>
+        <div class="box1">
+            <h1>BOX 1</h1>
+        </div>
+        <br>
+        <div class="box2">
+            <h1>BOX 2</h1>
+        </div>
+    </div>
+    <br><br>
+    <!--CSS ATTRIBUTE SELECTOR-->
+    <a href="https://example.com">link</a>
+    <a href="http://localhost:8080" target="_blank">link</a>
+    <a href="https://www.example.com/document.pdf">link</a>
+    <a href="https://www.example.org">link</a>
+    <br><br>
+    <div>
+        <h3>Form</h3>
+        <form>
+            <label>Name: </label>
+            <input type="text" name="name" id="" placeholder="Enter your name">
+            <br><br>
+            <label>Passoword</label>
+            <input type="password" name="passoword" id="" placeholder="Enter your password">
+            <br><br>
+            <label>Email:</label>
+            <input type="email" name="email" id="" placeholder="Enter your email">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div>
+        <p>I am Div's Child p</p>
+        <article>
+            <p>I am Div's grand child p</p>
+        </article>
+    </div>
+
+</body>
+</html>
