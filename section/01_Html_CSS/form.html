@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/table_style.css">
+    <style>
+        #login-form {
+            border: 5px solid gray;
+            padding: 50px;
+            height: 600px;
+            width: 500px;
+            border-radius: 10px;
+        }
+
+        button[type="submit"]:hover {
+            background: forestgreen;
+        }
+
+        button[type="reset"]:hover {
+            background: red;
+        }
+    </style>
+    <title>Form</title>
+</head>
+<body>
+<h1>FORM</h1>
+<div id="login-form">
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>
+                Name:
+                <input type="text" name="name" placeholder="Enter your name" required id="">
+            </label>
+            <br><br>
+            <label>
+                Email:
+                <input type="email" name="email" placeholder="Enter your email" required id="">
+            </label>
+            <br><br>
+            <label>
+                Phone Number:
+                <input type="number" name="phone-number" placeholder="Enter your number" required id="">
+            </label>
+            <br><br>
+            <label>
+                Sex:
+                <input type="radio" name="gender" required id="">Male
+                <input type="radio" name="gender" required id="">Female
+            </label>
+            <br><br>
+            <label>
+                City:
+                <select>
+                    <option value="dhaka">Dhaka</option>
+                    <option value="sylet">Sylet</option>
+                    <option value="chittagong">Chittagong</option>
+                    <option value="barishal">Barishal</option>
+                    <option value="noakhali">Noakhali</option>
+                </select>
+            </label>
+            <br><br>
+            <label>
+                Date of Birth:
+                <input type="date" name="dob" id="">
+            </label>
+            <br>
+            <br>
+            <fieldset style="width: 50%; margin-left: 20px;">
+                <label> Status:
+                    <select>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                    </select>
+                </label>
+                <br><br>
+                <label>
+                    Old Age:
+                    <input type="checkbox" name="greater-60" id="">60>
+                    <input type="checkbox" name="less-60" id="">60<
+                </label>
+            </fieldset>
+            <br>
+            <label>Food Item:
+                <input type="checkbox" name="dry-food" id="">Dry Food
+                <input type="checkbox" name="sead-food" id="">Seafood
+                <input type="checkbox" name="meat" id="">Meat
+                <input type="checkbox" name="other" id="">Others
+            </label>
+            <br><br>
+            <label>Pet:
+                <select id="">
+                    <option value="">Choose a Option</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="bird">Bird</option>
+                    <option value="other">Other</option>
+                    <option value="n/a">None</option>
+                </select>
+            </label>
+            <br><br>
+        </fieldset>
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</div>
+</body>
+</html>

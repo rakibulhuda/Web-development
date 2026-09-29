@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+
+        thead, tfoot {
+            background-color: lightskyblue;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 25px;
+        }
+
+        caption {
+            caption-side: bottom;
+            padding: 15px;
+        }
+    </style>
+    <title>Table</title>
+</head>
+<body>
+<section>
+    <h2>Table and Tags:</h2>
+    <ul>
+        <li>Table: <strong>table</strong></li>
+        <li>table head: <strong>thead</strong></li>
+        <li>table body: <strong>tbody</strong></li>
+        <li>table footer: <strong>tfoot</strong></li>
+        <li>table row: <strong>tr</strong></li>
+        <li>table data: <strong>td</strong></li>
+    </ul>
+</section>
+
+<div>
+    <table>
+        <caption>
+            <strong>Personal Information</strong>
+        </caption>
+        <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">City</th>
+            <th scope="col">DOB</th>
+            <th scope="col">Sex</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">John</th>
+            <td>Chicago</td>
+            <td>1985</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <th scope="row">Kevin</th>
+            <td>Detroit</td>
+            <td>1995</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <th scope="row">Steve</th>
+            <td>Missouri</td>
+            <td>1950</td>
+            <td>M</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <th scope="row" colspan="3">Total Sex:</th>
+            <td>M</td>
+        </tr>
+        </tfoot>
+
+    </table>
+</div>
+</body>
+</html>
