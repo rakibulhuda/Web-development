@@ -1,0 +1,87 @@
+.bread-crumbs {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.bread-crumbs li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    color: aquamarine;
+}
+
+.box {
+    border: 5px deeppink solid;
+    font-size: 4em;
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.box-container {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container2 {
+    margin-top: 100px;
+    background-color: lightskyblue;
+    height: 300px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /*calculate gap since height is important*/
+}
+
+.box2 {
+    background-color: yellow;
+    height: 50px;
+    width: 100px;
+    border: 2px dashed darkred;
+    text-align: center;
+    align-content: center;
+}
+
+.container3 {
+    margin-top: 100px;
+    background-color: bisque;
+    height: 200px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box3 {
+    background-color: greenyellow;
+    height: 50px;
+    width: 100px;
+    border: 2px dashed darkred;
+    text-align: center;
+    align-content: center;
+}
+
+.para {
+    background-color: #ebffcd;
+}
+
+.para p {
+    color: deeppink;
+    max-width: 85%;
+    margin: auto;
+    font-size: 1.2em;
+    text-align: justify;
+    padding: 25px;
+}

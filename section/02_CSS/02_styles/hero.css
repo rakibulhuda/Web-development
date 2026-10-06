@@ -1,0 +1,108 @@
+body {
+    max-width: 1560px;
+    background-color: bisque;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+/*HERO SECTION*/
+.hero-container {
+    display: flex;
+    align-items: center;
+    padding: 35px;
+}
+
+.hero-content {
+    padding: 2rem;
+}
+
+nav ul {
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 0;
+    padding: 0;
+    height: 3.5em;
+}
+
+.hero-container {
+    background-color: pink;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: navajowhite;
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: plum;
+}
+
+.hero-container p, h2 {
+    color: #484747;
+}
+
+.hero-container img {
+    width: 600px;
+    height: 400px;
+    border-radius: 25px;
+}
+
+.hero-button {
+    background-color: palegreen;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    margin: 20px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #484747;
+}
+
+.hero-button:hover {
+    background-color: orangered;
+}
+
+.card-container {
+    margin-top: 10px;
+    gap: 50px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 350px;
+    background-color: whitesmoke;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.card p {
+    text-align: justify;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card-button {
+    display: block;
+    margin-left: auto;
+}
+

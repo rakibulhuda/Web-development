@@ -1,0 +1,5 @@
+justify-content: center; ---> keeping content in the center
+display: flex;  ---> block 2 inline
+text-alight: center; ---> text in the center
+/*align-items: center;
+justify-content: center;*/  ---> both make content center on the screen
